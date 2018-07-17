@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>dropzonejs demo</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <style media="screen">
+      body {
+        font-family: sans-serif;
+      }
+      #container {
+        margin: 30px auto;
+        border: 1px solid black;
+        width: 70%;
+        height: 400px;
+        text-align: center;
+      }
+      #demo {
+        width: 100%;
+        height: 100%;
+      }
+      .d-n {
+        display: none;
+      }
+      .dropzone-content {
+        margin: 20% auto;
+        color: #b1b1b1;
+        font-size: 30px;
+      }
+      #preview {
+        margin: 20% auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="demo" class="dropzone">
+        <div class="dz-default dz-message dropzone-content">
+          <i class="fa fa-file"></i>
+          <span>drag your file or click</span>
+        </div>
+      </div>
+      <div id="confirm" class="d-n">
+        <div id="preview">
+        </div>
+        <div id="removeButton">
+          remove
+        </div>
+        <div id="uploadButton">
+          upload
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/min/dropzone.min.js"></script>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
